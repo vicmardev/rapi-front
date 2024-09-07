@@ -1,0 +1,88 @@
+<div class="container">
+    <br>
+    <div class="header">
+        <div class="header-1">
+        </div>
+        <div class="header-2">
+            <!--Aqui va a ir el header-->
+            <img src="../../../../assets/images/header.svg" alt="" class="header-image">
+        </div>
+        <div class="header-1">
+        </div>
+    </div>
+    <br>
+    <div class="header">
+        <div class="header-1">
+        </div>
+        <div class="header-2">
+            <div class="cardlaverita">
+                <div class="container-body">
+                    
+                </div>
+                <div class="container-body-1">
+                    <br>
+                    <h2>{{skullData.skullTitle}}</h2>
+                    <br>
+                    <!-- <p>{{lineBreak(skullData.skullText)}}</p>  -->
+                    <p *ngFor="let linea of skullData.skullText.split('.')"> {{linea.trim()}}</p> 
+                </div>
+                <div class="container-body">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="header-1">
+        </div>
+    </div>
+    <br>
+    <div class="buttons-conainer">
+        <div class="space">
+
+        </div>
+        <div class="button-space">
+            <button mat-fab extended color="primary" class="likeButton" (click)="voteSkull()">
+                <mat-icon>favorite</mat-icon>
+                Votar
+            </button>
+            <!-- <button mat-fab extended color="primary facebook" (click)="shareOnFacebook()">
+                <mat-icon>facebook</mat-icon>
+            </button> -->
+            <button mat-fab extended color="primary" class="facebook" (click)="sharedFacebook()">
+                <mat-icon>facebook</mat-icon>
+                Compartir en Facebook
+            </button>
+            <button mat-fab extended color="primary" class="twitter" (click)="sharedTwitter()">
+                <iconify-icon icon="mdi:twitter" width="27" height="27"></iconify-icon>
+                Compartir en Twitter
+            </button>
+            <a href="" [routerLink]="['/skull', skullData.idSkull]" target="_blank">
+                <button mat-fab extended color="primary" class="share">
+                    <mat-icon>share</mat-icon>
+                    Enlace
+                </button>
+            </a>
+        </div>
+        <div class="space">
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="buttons-conainer">
+        <div class="space">
+
+        </div>
+        <div class="button-space-return">
+            <button mat-fab extended color="primary" class="return" (click)="returnDashboard()">
+                <!-- <mat-icon>favorite</mat-icon> -->
+                Ir al inicio
+            </button>
+        </div>
+        <div class="space">
+        </div>
+    </div>
+    <br>
+</div>
+
+
+<!-- <p>{{skullData.skullTitle}}</p>
+<p>{{skullData.skullText}}</p> -->

@@ -1,0 +1,232 @@
+.container {
+    //background-image: url(../../../assets/images/flowers.jpg);
+    /* height: 100%;
+    width: 100%;
+    background-color: #320D39;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;  */
+}
+
+.container-two{
+<<<<<<< HEAD
+    background-color: rgba(255, 255, 255, 0.106);
+    width: 100%;
+    height: 100%;
+=======
+    /* background-image: url(../../../assets/images/patronback.svg);
+    width: 100%;
+    height: 100%;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover; */
+    //background-color: rgba(255, 255, 255, 0.106);
+}
+
+
+/* Border */
+.mat-form-field-appearance-outline .mat-form-field-outline {
+    color: white;
+}
+/* Font color */
+input.mat-input-element {
+color: white;
+}
+
+mat-label{
+    color: white;
+>>>>>>> 34871de (Share and login)
+}
+
+
+
+.container-tree{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title{
+    text-align: center;
+    color: white;
+    font-size: 80px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300  !important;
+}
+
+.legend{
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.login-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-login{
+    display: flex;
+    justify-content: center;
+}
+
+.login-social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fields{
+    width: 92%;
+}
+
+
+.button-large{
+    width: 92%;
+}
+
+.patern-button{
+    width: 100%;
+    display: flex;
+}
+
+.buttons-login-social{
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttons-login-social-1{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.button-social{
+    width: 50%;
+}
+
+.button-register{
+    background-color: #5C5BA4;
+    width: 93%;
+}
+
+button.button-register:hover{
+    background-color: #28b761 !important;
+    width: 93%;
+}
+
+.legend{
+    color: white;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-end {
+    border-radius: 50% !important;
+    border: none;
+    border-left: none;
+}
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-start {
+    border-radius: 1px !important;
+    border: none;
+    border-right: none;
+}
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-gap {
+    border-radius: 1px !important;
+    border-bottom: none;
+}
+
+::ng-deep.mat-form-field-appearance-outline .mat-form-field-outline {
+    box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+    border-radius: 15px;
+}
+
+.title-header{
+    width: 53%;
+    height: 53%;
+}
+
+.participate{
+    color: #EB691D;
+    font-size: 50px;
+}
+
+.banner-child{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banner{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    //height: 20%;
+}
+
+.banner-child-1{
+    width: 30%;
+}
+.banner-child-2{
+width: 20%;
+}
+
+.banner-child-3{
+    width: 60%;
+}
+
+.mat-tab-label {
+    color: red !important;
+}
+
+.buttons-login-social-child{
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttons-login-social-child-1{
+    width: 80%;
+}
+
+.buttons-login{
+    display: flex;
+    justify-content: center;
+}
+
+button.return{
+    width: 30% !important;
+}
+
+.title-section-cardlaverita{
+    color: white;
+    text-align: center;
+    font-size: 33px !important;
+    font-weight: 300 !important;
+}
+
+.acceptTerms{
+    color: #fff;
+}

@@ -1,0 +1,364 @@
+/* .container {
+    height: 100%;
+    width: 100%;
+    background-color: #320D39;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.container-two{
+    padding-top: 5%;
+    background-image: url(../../../assets/images/patronback.svg);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.container-tree{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title{
+    text-align: center;
+    color: white;
+    font-size: 80px;
+    font-family: Cormorant;
+    font-weight: 300  !important;
+}
+
+.legend{
+    color: white;
+    text-align: center;
+    font-family: Cormorant;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card{
+    width: 32%;
+    
+}
+
+.background-card{
+    background-image: url(../../../assets/images/test.jpg);
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.container-cards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-cards-content{
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-title{
+    color: #000;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+.card-element{
+    width: 28%;   
+    height: auto;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+.menu{
+    width: 98%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-create{
+    width: 98%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header{
+    width: 80%;
+    padding-left: 13%;
+}
+ */
+.container{
+    width: 100%;
+}
+
+.header{
+    display: flex;
+}
+
+.header-1{
+    width: 10%;
+}
+
+.header-2{
+    width: 80%;
+}
+
+.header-image{
+    width: 100%;
+    height: 100%;
+}
+
+.participate{
+    text-align: center;
+    color: #EB691D;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.steps{
+    //display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container-steps{
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.step{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+h3{
+    color: white;
+    font-size: 55px;
+    font-weight: 800;
+    width: 12%;
+}
+p{
+    color: white;
+    font-size: 17px;
+    font-weight: 300;
+    width: 85%;
+}
+
+.child{
+    width: 20%;
+}
+
+
+.container-one{
+    display: flex;
+}
+
+.child-one{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button.button-register-one{
+    margin-top: 4%;
+    margin-bottom: 5%;
+    background-color: #027742;
+    width: 30%;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.divisor{
+    width: 30%;
+    margin-bottom: 5%;
+}
+
+.gives{
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 300;
+    
+}
+
+.promo{
+    width: 50%;
+    margin-bottom: 2%;
+}
+
+.vote-favourite{
+    text-align: center;
+    color: #EB691D;
+    font-size: 40px;
+    font-weight: 300;    
+}
+
+.limitation{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.divider{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.divider-container{
+    width: 90%;
+}
+
+.cardlaverita{
+}
+
+.cardlaveritas-container{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cardlaverita-div{
+    width: 90%;
+    display: flex;
+    /* display: flex; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+.title-cardlaverita{
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+}
+
+.text{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.cardlaverita{
+    width: 35%;
+    flex-direction: row;
+    margin-bottom: 2%; /* Espacio entre cada objeto */
+    background-color: #404041;
+}
+
+.cardlaverita-1{
+    width: 40%;
+    flex-direction: row;
+    margin-bottom: 5%; /* Espacio entre cada objeto */
+    background-color: #404041;
+    border: 10px solid transparent;
+    border-image: url(../../../assets/images/frames/frame1.svg) 100 100;
+    border-image-slice: 10 fill;
+}
+
+.cardlaverita-2{
+    width: 40%;
+    flex-direction: row;
+    margin-bottom: 5%; /* Espacio entre cada objeto */
+    background-color: #404041;
+    border: 10px solid transparent;
+    border-image: url(../../../assets/images/frames/frame2.svg) 100 100;
+    border-image-slice: 10 fill;
+}
+
+.cardlaverita-3{
+    width: 40%;
+    flex-direction: row;
+    margin-bottom: 5%; /* Espacio entre cada objeto */
+    background-color: #404041;
+    border: 10px solid transparent;
+    border-image: url(../../../assets/images/frames/frame3.svg) 100 100;
+    border-image-slice: 10 fill;
+}
+
+.textSkull{
+    text-align: center;
+    font-size: 18px;
+}
+
+.border1{
+    border: 10px solid transparent;
+    border-image: url(../../../assets/images/frames/frame1.svg);
+}
+
+.border2{
+    border: 10px solid transparent;
+    border-image: url(../../../assets/images/frames/frame2.svg);
+}
+
+.border3{
+    border: 10px solid transparent;
+    border-image: url(../../../assets/images/frames/frame3.svg);
+}
+
+
+.title{
+    margin-top: 22%;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    margin-bottom: 15%;
+    justify-content: center;
+}
+
+.container-buttons{
+    width: 55%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button.share{
+    background-color: #762B83 !important;
+    font-size: 16px;
+}
+
+button.vote{
+    background-color: #762B83 !important;
+    font-size: 16px;
+}

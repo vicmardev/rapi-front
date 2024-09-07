@@ -1,0 +1,39 @@
+<div class="skull-detail">
+    <div class="content-skull">
+        <br><br>
+        <div class="title">
+            <h2 class="skull-title">{{data.info.skullTitle}}</h2>
+        </div>
+        <div class="content-text">
+            <p class="text">
+                {{data.info.skullText}}
+            </p>
+        </div>
+        <div class="buttons">
+            <button mat-fab extended color="primary" (click)="voteSkull()">
+                <mat-icon>favorite</mat-icon>
+            </button>
+            <button mat-fab extended color="primary" (click)="shareOnFacebook()">
+                <mat-icon>facebook</mat-icon>
+            </button>
+            <button mat-fab extended color="primary" (click)="sharedFacebook()">
+                <mat-icon>facebook</mat-icon>
+            </button>
+            <button mat-fab extended color="primary">
+                <iconify-icon icon="mdi:twitter" width="27" height="27"></iconify-icon>
+            </button>
+            <a href="" [routerLink]="['/skull', data.info.idSkull]" target="_blank">
+                {{data.info.skullTitle}}
+            </a>
+            
+
+
+            
+            <!-- <button mat-icon-button (click)="shareSkull()" color="warn" aria-label="Example icon button with share">
+                <mat-icon>share</mat-icon>
+            </button> -->
+        </div>
+        <br>
+        <br>
+    </div>
+</div>

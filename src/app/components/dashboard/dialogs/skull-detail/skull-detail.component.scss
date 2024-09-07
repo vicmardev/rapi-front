@@ -1,0 +1,41 @@
+.skull-detail{
+    width: 100%;
+}
+
+.content-skull{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+.content-text{
+    display: flex;
+    justify-content: center;
+    width: 90%;    
+}
+
+.buttons{
+    width: 90%;
+}
+
+.text{
+    text-align: justify;
+}
+/*
+.skull-title{
+    text-align: center;
+}
+
+.content-text{
+    width: 100%;
+}
+
+.content-skull{
+    text-align: center;
+} */

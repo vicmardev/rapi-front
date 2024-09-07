@@ -1,0 +1,93 @@
+<div class="container">
+    <div class="container-1">
+        <div class="form">
+            <div></div>
+            <div></div>
+            <br>
+            <div class="title">
+                <h1 class="title">Cardlaverita</h1>
+                <button mat-fab 
+                        extended 
+                        color="primary" 
+                        class="button-inspiration" 
+                        type="submit"
+                        (click)="goToInspiration()">
+                    Inspiración    
+                </button>
+            </div>
+            <br>
+            <form action="" class="creatForm" [formGroup]="skullForm" (ngSubmit)="createSkull()">
+                <mat-form-field class="fields" appearance="outline">
+                    <mat-label>Titulo</mat-label>
+                    <input type="text"
+                            formControlName="skullTitle"
+                            matInput>
+                </mat-form-field>
+                <mat-form-field class="fields" appearance="outline">
+                    <mat-label>Texto</mat-label>
+                    <textarea matInput 
+                    placeholder="Escribe aqui"
+                    formControlName="skullText"></textarea>
+                </mat-form-field>
+                <mat-form-field class="fields" appearance="outline">
+					<mat-label>Marco</mat-label>
+					<mat-select
+						placeholder="Seleccione un marco"
+						matInput
+						formControlName="skullImageRoute"
+						required>
+						<mat-option *ngFor="let framesSkull of framesSkulls" [value]="framesSkull.value">
+							{{ framesSkull.viewValue }}
+                            <img [src]="framesSkull.imageUrl" alt="{{framesSkull.viewValue}}" width="50" height="50">
+						</mat-option>
+					</mat-select>
+					<!-- <mat-error class="error-field">Campo obligatorio, favor de llenarlo</mat-error> -->
+				</mat-form-field>
+                <p class="acceptTerms"><mat-checkbox formControlName="acceptTerms" ><span class="acceptTerms"> Acepto la politica de privacidad,<b>Terminos y condiciones</b></span> </mat-checkbox></p>
+                <button mat-fab 
+                        extended 
+                        color="primary" 
+                        class="button-register" 
+                        type="submit">
+                    Siguiente    
+                </button>
+                <br>
+                <button mat-fab extended color="primary" class="return" (click)="returnDashboard()">
+                    <!-- <mat-icon>favorite</mat-icon> -->
+                    Ir al inicio
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- 
+<div class="patern">
+    <br>
+    <div class="child">
+        <div class="title">
+            <h2>¿Esta seguro de su voto?</h2>
+            <p>Una vez que haya realizado su voto, este podrá ser eliminado</p>
+        </div>
+        <div class="buttons">
+            <button
+                type="submit"
+                id="buttonProfile"
+                mat-raised-button
+                class="btn-block"
+                >
+                Confirmar
+            </button>
+            <button
+                type="submit"
+                id="buttonProfile"
+                mat-raised-button
+                class="btn-block"
+                >
+                Cancelar
+            </button>
+        </div>
+    </div>
+    <br>
+</div> -->
+

@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="container-form">
+        <div class="header">
+            <h2 class="title">
+                Registrarse
+            </h2>
+        </div>
+        <form [formGroup]="loginForm" (ngSubmit)="login()" class="form">
+            <div class="child">
+                <mat-form-field class="field">
+                    <mat-label>Nombre</mat-label>
+                    <input type="text"
+                        formControlName="nameUser"
+                        matInput>
+                </mat-form-field>
+                <br>
+                <mat-form-field class="field">
+                    <mat-label>Apellidos</mat-label>
+                    <input type="text"
+                        formControlName="lastNameUser"
+                        matInput>
+                </mat-form-field>
+                <br>
+                <mat-form-field class="field">
+                    <mat-label>Email</mat-label>
+                    <input type="email"
+                        formControlName="emailUser"
+                        matInput>
+                </mat-form-field>
+                <br>
+                <mat-form-field class="field">
+                    <mat-label>Contraseña</mat-label>
+                    <input type="password"
+                        formControlName="passwordUser"
+                        matInput>
+                </mat-form-field>
+                <mat-form-field class="field">
+                    <mat-label>Confirmar contraseña</mat-label>
+                    <input type="password"
+                        formControlName="confirmPassword"
+                        matInput>
+                </mat-form-field>
+                <div *ngIf="loginForm.hasError('passwordMismatch')">
+                    Las contraseñas no coinciden.
+                  </div>
+            </div>
+            <br>
+            <div class="button">
+				<button
+					type="submit"
+					id="buttonProfile"
+					mat-raised-button
+					class="btn-block">
+					Registrarse
+				</button>
+			</div>
+        </form>
+    </div>
+</div>

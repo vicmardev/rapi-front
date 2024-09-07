@@ -1,0 +1,78 @@
+
+<div class="container">
+    <div class="container-two">
+        <div class="menu">
+            <br>
+            <br>
+            <button
+                type="submit"
+                id="buttonProfile"
+                mat-raised-button
+                class="btn-block"
+                (click)="closeSession()">
+                Cerrar sesión
+            </button>
+            <br>
+        </div>
+    </div>
+    <div class="container-one">
+        <div class="child">
+        </div>
+        <div class="child-one">
+            <button
+                mat-fab
+                extended
+                class="button-register-one"
+                type="submit"
+                (click)="goToRegister()">
+                    Sube tu cardlaverita
+            </button>
+            <img src="../../../assets/images/divisor.svg" alt="" class="divisor">
+            <h2 class="gives">Podrás ganar increíbles regalos</h2>
+            <img src="../../../assets/images/promo.png" alt="" class="promo">
+            <h2 class="vote-favourite">Vota por tus favoritas</h2>
+            <p class="limitation">Limitado a un voto por Cardlaverita</p>
+        </div>
+        <div class="child">
+        </div>
+    </div>
+    <div class="divider">
+        <div class="divider-container">
+            <img src="../../../assets/images/linea.svg" alt="">
+        </div>
+    </div>
+    <div class="cardlaveritas-container">
+        <div class="cardlaverita-div">
+            <div  *ngFor="let skull of skullList"
+            [ngClass]="
+                {'cardlaverita-1': skull.skullImageRoute == 1,
+                'cardlaverita-2': skull.skullImageRoute == 2,
+                'cardlaverita-3' : skull.skullImageRoute == 3 }">
+                <div class="title">
+                    <h4 class="title-cardlaverita">{{skull.skullTitle}}</h4>
+                </div>
+                <div class="text">
+                    <p class="textSkull" *ngFor="let linea of skull.skullText.split('.')"> {{linea.trim()}}</p>
+                </div>
+
+                <div class="buttons">
+                    <div class="container-buttons">
+                        <button mat-fab extended color="primary" class="vote" (click)="voteSkull(skull)">
+                            <mat-icon>favorite</mat-icon>
+                            Votar
+                        </button>
+                        <button
+                            matTooltip="{{hostName}}{{skull.idSkull}}"
+                            [matTooltipPosition]="'above'"
+                            mat-fab extended
+                            color="primary"
+                            class="share">
+                            <mat-icon>share</mat-icon>
+                            Compartir
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
